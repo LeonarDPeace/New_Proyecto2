@@ -2,7 +2,7 @@ import React from 'react';
 import TarjetaLibro from './TarjetaLibro';
 import './HistorialDevoluciones.css';
 
-const HistorialDevoluciones = ({ historialPila, onDeshacerDevolucion }) => {
+const HistorialDevoluciones = ({ historialPila, onDeshacerDevolucion, onAgregarListaEspera }) => {
   const librosDevueltos = historialPila.obtenerTodos();
 
   return (
@@ -23,6 +23,7 @@ const HistorialDevoluciones = ({ historialPila, onDeshacerDevolucion }) => {
               <TarjetaLibro
                 libro={libro}
                 onPrestar={() => {}}
+                onAgregarListaEspera={onAgregarListaEspera}
               />
               <button 
                 className="boton-deshacer"

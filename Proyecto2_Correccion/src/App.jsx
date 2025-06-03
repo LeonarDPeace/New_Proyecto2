@@ -101,18 +101,20 @@ function App() {
             <LibrosPrestados 
               catalogoLibros={catalogoLibros}
               onDevolverLibro={devolverLibro}
+              onAgregarListaEspera={agregarListaEspera}
+            />
+          </section>
+
+          <section className="seccion-historial">
+            <HistorialDevoluciones 
+              historialPila={historialDevoluciones}
+              onDeshacerDevolucion={deshacerDevolucion}
+              onAgregarListaEspera={agregarListaEspera}
             />
           </section>
         </div>
 
         <div className="contenedor-secundario">
-          <section className="seccion-historial">
-            <HistorialDevoluciones 
-              historialPila={historialDevoluciones}
-              onDeshacerDevolucion={deshacerDevolucion}
-            />
-          </section>
-
           <section className="seccion-espera">
             <ListaEspera 
               colaEspera={colaEspera}

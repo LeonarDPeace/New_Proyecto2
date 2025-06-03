@@ -2,7 +2,7 @@ import React from 'react';
 import TarjetaLibro from './TarjetaLibro';
 import './LibrosPrestados.css';
 
-const LibrosPrestados = ({ catalogoLibros, onDevolverLibro }) => {
+const LibrosPrestados = ({ catalogoLibros, onDevolverLibro, onAgregarListaEspera }) => {
   const librosPrestados = catalogoLibros.obtenerTodos().filter(libro => !libro.disponible);
 
   return (
@@ -23,6 +23,7 @@ const LibrosPrestados = ({ catalogoLibros, onDevolverLibro }) => {
               <TarjetaLibro
                 libro={libro}
                 onPrestar={() => {}}
+                onAgregarListaEspera={onAgregarListaEspera}
                 mostrarBotonDevolver={false}
               />
               <button 
