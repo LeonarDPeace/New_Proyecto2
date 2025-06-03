@@ -1,11 +1,11 @@
-# 📚 Biblioteca Virtual Interactiva
+# Biblioteca Virtual Interactiva
 
 ## Descripción
 Aplicación React que simula el sistema de préstamos y devoluciones de libros en una biblioteca virtual, implementando las estructuras de datos enseñadas en clase: **Listas Enlazadas**, **Pilas** y **Colas**.
 
 ## Estructuras de Datos Implementadas
 
-### 📋 Lista Enlazada (Catálogo de Libros)
+### Lista Enlazada (Catálogo de Libros)
 - **Archivo**: `src/estructuras/ListaEnlazada.js`
 - **Funcionalidad**: Gestiona el catálogo de libros disponibles
 - **Métodos implementados**:
@@ -15,7 +15,7 @@ Aplicación React que simula el sistema de préstamos y devoluciones de libros e
   - `tamaño()`: Retorna el número de libros
   - `obtenerTodos()`: Retorna todos los libros
 
-### 📚 Pila (Historial de Devoluciones)
+### Pila (Historial de Devoluciones)
 - **Archivo**: `src/estructuras/Pila.js`
 - **Funcionalidad**: Controla los libros devueltos recientemente (LIFO)
 - **Métodos implementados**:
@@ -24,7 +24,7 @@ Aplicación React que simula el sistema de préstamos y devoluciones de libros e
   - `verTope()`: Ve el último libro devuelto sin removerlo
   - `estaVacia()`: Verifica si hay libros en el historial
 
-### 👥 Cola (Lista de Espera)
+### Cola (Lista de Espera)
 - **Archivo**: `src/estructuras/Cola.js`
 - **Funcionalidad**: Administra la cola de espera para libros prestados (FIFO)
 - **Métodos implementados**:
@@ -35,44 +35,44 @@ Aplicación React que simula el sistema de préstamos y devoluciones de libros e
 
 ## Componentes React
 
-### 🏠 App.jsx
+### App.jsx
 Componente principal que maneja el estado global y la lógica de negocio.
 
-### 📖 CatalogoLibros.jsx
+### CatalogoLibros.jsx
 Muestra los libros disponibles y permite prestarlos a usuarios.
 
-### 📚 LibrosPrestados.jsx
+### LibrosPrestados.jsx
 Muestra los libros actualmente prestados y permite devolverlos.
 
-### 📋 HistorialDevoluciones.jsx
+### HistorialDevoluciones.jsx
 Muestra el historial de devoluciones con opción de deshacer.
 
-### 👥 ListaEspera.jsx
+### ListaEspera.jsx
 Muestra la cola de usuarios esperando por libros prestados.
 
-### 🎴 TarjetaLibro.jsx
+### TarjetaLibro.jsx
 Componente reutilizable para mostrar información de un libro.
 
 ## Funcionalidades Principales
 
-### ✅ Gestión del Catálogo
+### Gestión del Catálogo
 - Mostrar libros disponibles
 - Prestar libro (se elimina de la lista y se asigna a un usuario)
 - Selección de usuario para préstamo
 
-### ✅ Sistema de Devoluciones
+### Sistema de Devoluciones
 - Devolver libro (va a la pila de devueltos)
 - Historial de libros devueltos recientemente
 - Función "deshacer devolución" (saca de la pila y vuelve al catálogo)
 
-### ✅ Cola de Espera Automática
+### Cola de Espera Automática
 - Si un libro está prestado, los usuarios pueden entrar en cola
 - Cuando se devuelve el libro, se asigna automáticamente al siguiente de la cola
 - Visualización de posición en la cola y detalles de solicitud
 
 ## Diseño y Estilo
 
-### 🎨 Paleta de Colores Pastel
+### Paleta de Colores Pastel
 - **Rosa pastel**: `#FFE5E5` - Color primario
 - **Azul pastel**: `#E5F4FF` - Color secundario  
 - **Verde pastel**: `#E5FFE5` - Color terciario
