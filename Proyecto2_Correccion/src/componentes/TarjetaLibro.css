@@ -1,0 +1,144 @@
+@import '../estilos/variables.css';
+
+.tarjeta-libro {
+  background-color: var(--color-fondo);
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra-suave);
+  padding: var(--espacio-md);
+  margin: var(--espacio-md);
+  width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--color-borde);
+}
+
+.tarjeta-libro:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-media);
+}
+
+.tarjeta-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-sm);
+}
+
+.libro-titulo {
+  color: var(--color-texto);
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.libro-autor {
+  color: var(--color-texto);
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.libro-genero {
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border-radius: var(--borde-radio);
+  display: inline-block;
+  font-size: 0.875rem;
+}
+
+.libro-isbn {
+  color: var(--color-texto);
+  font-size: 0.875rem;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.libro-prestado {
+  background-color: var(--color-primario);
+  color: var(--color-texto);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border-radius: var(--borde-radio);
+  font-size: 0.875rem;
+}
+
+.tarjeta-acciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-sm);
+  margin-top: var(--espacio-md);
+}
+
+.selector-usuario {
+  padding: var(--espacio-sm);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--borde-radio);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.selector-usuario:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+.boton-prestar,
+.boton-devolver,
+.boton-lista-espera {
+  padding: var(--espacio-sm) var(--espacio-md);
+  border: none;
+  border-radius: var(--borde-radio);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-xs);
+  width: 100%;
+}
+
+.boton-prestar {
+  background-color: var(--color-terciario);
+  color: var(--color-texto);
+}
+
+.boton-prestar:hover {
+  background-color: #D1FFD1;
+  transform: translateY(-2px);
+}
+
+.boton-lista-espera {
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+}
+
+.boton-lista-espera:hover {
+  background-color: #D1E5FF;
+  transform: translateY(-2px);
+}
+
+.boton-devolver {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+}
+
+.boton-devolver:hover {
+  background-color: #FFD1F4;
+  transform: translateY(-2px);
+}
+
+.boton-prestar:disabled,
+.boton-lista-espera:disabled,
+.boton-devolver:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.6;
+}
+
+.estado-prestado {
+  color: var(--color-texto);
+  opacity: 0.7;
+  font-style: italic;
+}

@@ -1,0 +1,79 @@
+@import '../estilos/variables.css';
+
+.historial-devoluciones {
+  padding: var(--espacio-lg);
+}
+
+.historial-header {
+  margin-bottom: var(--espacio-xl);
+  background-color: var(--color-primario);
+  padding: var(--espacio-lg);
+  border-radius: var(--borde-radio-lg);
+  box-shadow: var(--sombra-suave);
+}
+
+.historial-header h2 {
+  color: var(--color-texto);
+  margin: 0 0 var(--espacio-sm);
+  font-size: 1.75rem;
+}
+
+.historial-header p {
+  color: var(--color-texto);
+  margin: var(--espacio-sm) 0;
+  font-size: 1rem;
+}
+
+.libros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--espacio-lg);
+  padding: var(--espacio-md);
+}
+
+.libro-devuelto-contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-sm);
+}
+
+.boton-deshacer {
+  background-color: var(--color-acento);
+  color: var(--color-texto);
+  border: none;
+  padding: var(--espacio-sm) var(--espacio-md);
+  border-radius: var(--borde-radio);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-xs);
+}
+
+.boton-deshacer:hover {
+  background-color: #FFD1F4;
+  transform: translateY(-2px);
+}
+
+.mensaje-vacio {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--espacio-xl);
+  background-color: var(--color-primario);
+  border-radius: var(--borde-radio);
+  color: var(--color-texto);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .historial-header {
+    padding: var(--espacio-md);
+  }
+
+  .libros-grid {
+    grid-template-columns: 1fr;
+  }
+}

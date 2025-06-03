@@ -1,0 +1,25 @@
+:root {
+  /* Paleta de colores pastel */
+  --color-primario: #FFE5E5;  /* Rosa pastel */
+  --color-secundario: #E5F4FF; /* Azul pastel */
+  --color-terciario: #E5FFE5;  /* Verde pastel */
+  --color-acento: #FFE5F4;     /* Lila pastel */
+  --color-fondo: #FFFFFF;      /* Blanco */
+  --color-texto: #333333;      /* Gris oscuro */
+  --color-borde: #CCCCCC;      /* Gris claro */
+  
+  /* Sombras */
+  --sombra-suave: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --sombra-media: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Bordes redondeados */
+  --borde-radio: 8px;
+  --borde-radio-lg: 12px;
+  
+  /* Espaciado */
+  --espacio-xs: 0.25rem;
+  --espacio-sm: 0.5rem;
+  --espacio-md: 1rem;
+  --espacio-lg: 1.5rem;
+  --espacio-xl: 2rem;
+}

@@ -1,0 +1,116 @@
+@import '../estilos/variables.css';
+
+.lista-espera {
+  padding: var(--espacio-lg);
+}
+
+.lista-header {
+  margin-bottom: var(--espacio-xl);
+  background-color: var(--color-terciario);
+  padding: var(--espacio-lg);
+  border-radius: var(--borde-radio-lg);
+  box-shadow: var(--sombra-suave);
+}
+
+.lista-header h2 {
+  color: var(--color-texto);
+  margin: 0 0 var(--espacio-sm);
+  font-size: 1.75rem;
+}
+
+.lista-header p {
+  color: var(--color-texto);
+  margin: var(--espacio-sm) 0;
+  font-size: 1rem;
+}
+
+.usuarios-lista {
+  padding: var(--espacio-md);
+}
+
+.cola-usuarios {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-md);
+}
+
+.solicitud-espera {
+  display: flex;
+  gap: var(--espacio-md);
+  background-color: var(--color-fondo);
+  padding: var(--espacio-md);
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra-suave);
+  border: 1px solid var(--color-borde);
+  transition: transform 0.2s ease;
+}
+
+.solicitud-espera:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-media);
+}
+
+.numero-orden {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--color-terciario);
+  border-radius: 50%;
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+.detalles-solicitud {
+  flex-grow: 1;
+}
+
+.detalles-solicitud h3 {
+  margin: 0 0 var(--espacio-sm);
+  color: var(--color-texto);
+  font-size: 1.1rem;
+}
+
+.libro-solicitado {
+  background-color: var(--color-secundario);
+  padding: var(--espacio-sm);
+  border-radius: var(--borde-radio);
+  margin: var(--espacio-sm) 0;
+}
+
+.libro-solicitado p {
+  margin: var(--espacio-xs) 0;
+  font-size: 0.9rem;
+  color: var(--color-texto);
+}
+
+.fecha-solicitud {
+  font-size: 0.85rem;
+  color: var(--color-texto);
+  opacity: 0.7;
+  margin: var(--espacio-xs) 0 0;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  padding: var(--espacio-xl);
+  background-color: var(--color-terciario);
+  border-radius: var(--borde-radio);
+  color: var(--color-texto);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .lista-header {
+    padding: var(--espacio-md);
+  }
+
+  .solicitud-espera {
+    flex-direction: column;
+  }
+
+  .numero-orden {
+    align-self: flex-start;
+  }
+}
